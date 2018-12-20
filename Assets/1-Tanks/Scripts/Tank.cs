@@ -29,7 +29,18 @@ namespace Tanks
         private float fuelTimer = 0f;       // Elapsed time of movement (fuel)
         private Slider fuelSlider;          // Reference to newly spawned slider (UI)
         private bool isPlaying = false;     // Is this Tank currently playing?
-
+        public bool IsPlaying
+        {
+            get { return isPlaying; }
+            set
+            {
+                isPlaying = value;
+                if (isPlaying)
+                {
+                    Reset();
+                }
+            }
+        }
         #region Unity Events
         private void Start()
         {
@@ -42,17 +53,22 @@ namespace Tanks
         }
         private void Update()
         {
-            // Update UI's position
             UpdateUI();
-
-            // Handle movement for the Tank
-            Move();
-            RotateGunToMouse();
-            // If we press fire button
-            if(Input.GetButtonDown("Fire1"))
+            if (isPlaying)
             {
-                // Shoot bullet out of Gun
-                Shoot();
+
+                // Update UI's position
+                // Handle movement for the Tank
+                Move();
+                RotateGunToMouse();
+                // If we press fire button
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    // Shoot bullet out of Gun
+                    Shoot();
+
+                    IsPlaying = false;
+                }
             }
         }
         private void OnDestroy()
@@ -66,7 +82,7 @@ namespace Tanks
         }
         private void Reset()
         {
-
+            fuelTimer = fuelDuration;
         }
         #endregion
 

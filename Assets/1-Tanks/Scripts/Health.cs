@@ -18,7 +18,7 @@ namespace Tanks
 
         [HideInInspector] public Vector3 lastHitPoint;
 
-        private float currentHealth = 100f;
+        public float currentHealth = 100f;
         private Slider healthSlider;
 
         #region Unity Events

@@ -113,141 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &55874992
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 55874993}
-  - component: {fileID: 55874996}
-  - component: {fileID: 55874995}
-  - component: {fileID: 55874997}
-  - component: {fileID: 55874994}
-  m_Layer: 0
-  m_Name: Tank_1 Blue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &55874993
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 55874992}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.4, y: 0.38, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1559285936}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &55874994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 55874992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59dc9cdda34d5714ca7761adc33ae00a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  healthSliderParent: {fileID: 0}
-  healthSliderPrefab: {fileID: 0}
-  offset: {x: 0, y: 1, z: 0}
-  lastHitPoint: {x: 0, y: 0, z: 0}
---- !u!60 &55874995
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 55874992}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.7695942, y: 0.08993316}
-      - {x: 0.65525246, y: 0.2298435}
-      - {x: 0.5485897, y: 0.09393293}
-      - {x: 0.37745667, y: 0.26264596}
-      - {x: 0.16978645, y: 0.21828073}
-      - {x: 0.10521507, y: 0.487593}
-      - {x: -0.11769676, y: 0.19961178}
-      - {x: -0.1887064, y: 0.19775283}
-      - {x: -0.8116522, y: 0.14969683}
-      - {x: -0.7852583, y: 0.04655111}
-      - {x: -0.5944233, y: -0.6961655}
-      - {x: 0.04489422, y: -0.70280373}
-      - {x: 0.1776619, y: -0.6895271}
-      - {x: 0.6143398, y: -0.7028036}
-      - {x: 0.77845955, y: -0.036175996}
---- !u!50 &55874996
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 55874992}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &55874997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 55874992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c9e372dea0b95a4499b2b3c310544f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  fuelDuration: 2
-  bulletSpeed: 10
-  bulletPrefab: {fileID: 0}
-  explosionForce: 5
-  fuelSliderParent: {fileID: 0}
-  fuelSliderPrefab: {fileID: 0}
-  offset: {x: 0, y: 2, z: 0}
-  gun: {fileID: 0}
-  spawnPoint: {fileID: 0}
-  rigid: {fileID: 0}
-  health: {fileID: 0}
 --- !u!1 &94817028
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,138 +487,6 @@ Transform:
   m_Father: {fileID: 990716676}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &528070293
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 528070294}
-  - component: {fileID: 528070297}
-  - component: {fileID: 528070296}
-  - component: {fileID: 528070298}
-  - component: {fileID: 528070295}
-  m_Layer: 0
-  m_Name: Tank_2 Green
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &528070294
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 528070293}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.62, y: -2.23, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1559285936}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &528070295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 528070293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59dc9cdda34d5714ca7761adc33ae00a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  healthSliderParent: {fileID: 0}
-  healthSliderPrefab: {fileID: 0}
-  offset: {x: 0, y: 1, z: 0}
-  lastHitPoint: {x: 0, y: 0, z: 0}
---- !u!60 &528070296
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 528070293}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.6612848, y: 0.2122531}
-      - {x: 0.36123168, y: 0.22818947}
-      - {x: -0.10205948, y: 0.18659544}
-      - {x: -0.5373632, y: 0.46065867}
-      - {x: -0.5687429, y: 0.2943946}
-      - {x: -0.5726396, y: 0.23156273}
-      - {x: -0.63901055, y: 0.1756835}
-      - {x: -0.822188, y: -0.12406635}
-      - {x: -0.7689501, y: -0.75960827}
-      - {x: 0.57955086, y: -0.75960827}
-      - {x: 0.76073205, y: -0.40017366}
-      - {x: 0.8522388, y: -0.15213108}
---- !u!50 &528070297
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 528070293}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &528070298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 528070293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c9e372dea0b95a4499b2b3c310544f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  fuelDuration: 2
-  bulletSpeed: 10
-  bulletPrefab: {fileID: 0}
-  explosionForce: 5
-  fuelSliderParent: {fileID: 0}
-  fuelSliderPrefab: {fileID: 0}
-  offset: {x: 0, y: 2, z: 0}
-  gun: {fileID: 0}
-  spawnPoint: {fileID: 0}
-  rigid: {fileID: 0}
-  health: {fileID: 0}
 --- !u!1 &647342661
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,9 +572,9 @@ GameObject:
   - component: {fileID: 832439673}
   - component: {fileID: 832439678}
   - component: {fileID: 832439677}
+  - component: {fileID: 832439676}
   - component: {fileID: 832439675}
   - component: {fileID: 832439674}
-  - component: {fileID: 832439676}
   m_Layer: 0
   m_Name: TanksGround
   m_TagString: Ground
@@ -866,8 +599,7 @@ Transform:
 --- !u!66 &832439674
 CompositeCollider2D:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 66756638356354100, guid: d2f768926f6fffe47978aaca0ac319cc,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 832439672}
   m_Enabled: 1
@@ -2360,8 +2092,7 @@ CompositeCollider2D:
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 50958574709858262, guid: d2f768926f6fffe47978aaca0ac319cc,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 832439672}
   m_BodyType: 2
@@ -18230,145 +17961,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &876307460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 876307461}
-  - component: {fileID: 876307464}
-  - component: {fileID: 876307463}
-  - component: {fileID: 876307465}
-  - component: {fileID: 876307462}
-  m_Layer: 0
-  m_Name: Tank_2 Blue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &876307461
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 876307460}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.35, y: -1.72, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1559285936}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &876307462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 876307460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59dc9cdda34d5714ca7761adc33ae00a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  healthSliderParent: {fileID: 0}
-  healthSliderPrefab: {fileID: 0}
-  offset: {x: 0, y: 1, z: 0}
-  lastHitPoint: {x: 0, y: 0, z: 0}
---- !u!60 &876307463
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 876307460}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.6919155, y: 0.14121044}
-      - {x: 0.55848503, y: 0.11178827}
-      - {x: 0.49580574, y: 0.13148499}
-      - {x: 0.36053658, y: 0.27862763}
-      - {x: 0.10395241, y: 0.46578157}
-      - {x: 0.011663437, y: 0.21097755}
-      - {x: -0.090904236, y: 0.053959727}
-      - {x: -0.16839027, y: 0.13591444}
-      - {x: -0.19742775, y: 0.13347757}
-      - {x: -0.4003582, y: 0.15568423}
-      - {x: -0.5110016, y: 0.119023204}
-      - {x: -0.647707, y: 0.08532238}
-      - {x: -0.64832115, y: 0.08703387}
-      - {x: -0.702322, y: 0.073642015}
-      - {x: -0.71847343, y: -0.0318774}
-      - {x: -0.5877857, y: -0.69573617}
-      - {x: 0.13882637, y: -0.7032182}
-      - {x: 0.6406841, y: -0.70378375}
-      - {x: 0.7744713, y: 0.0473243}
---- !u!50 &876307464
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 876307460}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &876307465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 876307460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c9e372dea0b95a4499b2b3c310544f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  fuelDuration: 2
-  bulletSpeed: 10
-  bulletPrefab: {fileID: 0}
-  explosionForce: 5
-  fuelSliderParent: {fileID: 0}
-  fuelSliderPrefab: {fileID: 0}
-  offset: {x: 0, y: 2, z: 0}
-  gun: {fileID: 0}
-  spawnPoint: {fileID: 0}
-  rigid: {fileID: 0}
-  health: {fileID: 0}
 --- !u!1 &920335293
 GameObject:
   m_ObjectHideFlags: 0
@@ -18443,7 +18035,7 @@ GameObject:
   - component: {fileID: 929187644}
   - component: {fileID: 929187643}
   - component: {fileID: 929187642}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player2_Tank_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18457,11 +18049,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 929187640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.66, y: 1.03, z: 0}
+  m_LocalPosition: {x: 22.89, y: 1.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1559285936}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &929187642
 MonoBehaviour:
@@ -18494,8 +18086,9 @@ MonoBehaviour:
   healthSliderParent: {fileID: 419440657}
   healthSliderPrefab: {fileID: 1513792684129314, guid: ee0b6264065c4004281fad0771782971,
     type: 2}
-  offset: {x: 0, y: 1, z: 0}
+  offset: {x: 0, y: 1.5, z: 0}
   lastHitPoint: {x: 0, y: 0, z: 0}
+  currentHealth: 100
 --- !u!114 &929187643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18508,14 +18101,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  fuelDuration: 2
-  bulletSpeed: 2
-  bulletPrefab: {fileID: 0}
+  fuelDuration: 8
+  bulletSpeed: 3.5
+  bulletPrefab: {fileID: 1145630655164324, guid: 127b75038deb78f4db209fc5a9040e39,
+    type: 2}
   explosionForce: 5
   fuelSliderParent: {fileID: 1644737127}
   fuelSliderPrefab: {fileID: 1834358540672280, guid: a110a6ba39cadb049897d1311610b16d,
     type: 2}
-  offset: {x: 0, y: 1.5, z: 0}
+  offset: {x: 0, y: 1.8, z: 0}
   gun: {fileID: 0}
   spawnPoint: {fileID: 0}
   rigid: {fileID: 929187645}
@@ -18544,12 +18138,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.054092407, y: 0.2692864}
-      - {x: -0.6545582, y: -0.19355005}
-      - {x: -0.5877857, y: -0.66971385}
+    - - {x: 0.031243324, y: 0.12846184}
+      - {x: -0.76984787, y: -0.1770742}
+      - {x: -0.7689667, y: -0.6532515}
       - {x: 0.06264305, y: -0.65762484}
       - {x: 0.6453457, y: -0.63440746}
-      - {x: 0.74692726, y: -0.23337787}
+      - {x: 0.5869827, y: -0.3247745}
 --- !u!50 &929187645
 Rigidbody2D:
   serializedVersion: 4
@@ -18569,7 +18163,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &976969473
 GameObject:
   m_ObjectHideFlags: 0
@@ -19002,6 +18596,48 @@ Transform:
   m_Father: {fileID: 1127760903}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1426789854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1426789856}
+  - component: {fileID: 1426789855}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1426789855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1426789854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e09f2eed55a03444917578c80392ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tanks: []
+  currentTank: 0
+--- !u!4 &1426789856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1426789854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.365222, y: 3.7582188, z: 0.1079915}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1483597752
 GameObject:
   m_ObjectHideFlags: 0
@@ -19085,7 +18721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1559285936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Players
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19102,10 +18738,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 55874993}
-  - {fileID: 876307461}
-  - {fileID: 1850338153}
-  - {fileID: 528070294}
   - {fileID: 1919054441}
   - {fileID: 929187641}
   m_Father: {fileID: 990716676}
@@ -19378,141 +19010,6 @@ Transform:
   m_Father: {fileID: 1127760903}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1850338152
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1850338153}
-  - component: {fileID: 1850338156}
-  - component: {fileID: 1850338155}
-  - component: {fileID: 1850338157}
-  - component: {fileID: 1850338154}
-  m_Layer: 0
-  m_Name: Tank_1 Green
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1850338153
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1850338152}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.63, y: -1.68, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1559285936}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1850338154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1850338152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59dc9cdda34d5714ca7761adc33ae00a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  healthSliderParent: {fileID: 0}
-  healthSliderPrefab: {fileID: 0}
-  offset: {x: 0, y: 1, z: 0}
-  lastHitPoint: {x: 0, y: 0, z: 0}
---- !u!60 &1850338155
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1850338152}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.78597164, y: 0.07001424}
-      - {x: 0.3542471, y: 0.20541191}
-      - {x: -0.14907837, y: 0.22537899}
-      - {x: -0.4286375, y: 0.36678874}
-      - {x: -0.59500027, y: 0.46590495}
-      - {x: -0.60291195, y: 0.29548872}
-      - {x: -0.6673746, y: 0.19670677}
-      - {x: -0.7129469, y: 0.13709652}
-      - {x: -0.7611704, y: 0.065359354}
-      - {x: -0.76780796, y: 0.0819304}
-      - {x: -0.87339115, y: -0.28196406}
-      - {x: -0.8063574, y: -0.6830863}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.8335085, y: -0.052672148}
---- !u!50 &1850338156
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1850338152}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &1850338157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1850338152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c9e372dea0b95a4499b2b3c310544f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  fuelDuration: 2
-  bulletSpeed: 10
-  bulletPrefab: {fileID: 0}
-  explosionForce: 5
-  fuelSliderParent: {fileID: 0}
-  fuelSliderPrefab: {fileID: 0}
-  offset: {x: 0, y: 2, z: 0}
-  gun: {fileID: 0}
-  spawnPoint: {fileID: 0}
-  rigid: {fileID: 0}
-  health: {fileID: 0}
 --- !u!1 &1919054440
 GameObject:
   m_ObjectHideFlags: 0
@@ -19525,7 +19022,7 @@ GameObject:
   - component: {fileID: 1919054444}
   - component: {fileID: 1919054443}
   - component: {fileID: 1919054442}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player1_Tank_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19539,11 +19036,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1919054440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.68, y: 1.03, z: 0}
+  m_LocalPosition: {x: -5.06, y: -4.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1559285936}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1919054442
 MonoBehaviour:
@@ -19576,8 +19073,9 @@ MonoBehaviour:
   healthSliderParent: {fileID: 419440657}
   healthSliderPrefab: {fileID: 1513792684129314, guid: ee0b6264065c4004281fad0771782971,
     type: 2}
-  offset: {x: 0, y: 1, z: 0}
+  offset: {x: 0, y: 1.5, z: 0}
   lastHitPoint: {x: 0, y: 0, z: 0}
+  currentHealth: 100
 --- !u!114 &1919054443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19590,15 +19088,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  fuelDuration: 2
-  bulletSpeed: 2
+  fuelDuration: 8
+  bulletSpeed: 3.5
   bulletPrefab: {fileID: 1382650870354510, guid: b66615885809478479e4d1848f82acca,
     type: 2}
   explosionForce: 5
   fuelSliderParent: {fileID: 1644737127}
   fuelSliderPrefab: {fileID: 1834358540672280, guid: a110a6ba39cadb049897d1311610b16d,
     type: 2}
-  offset: {x: 0, y: 1.5, z: 0}
+  offset: {x: 0, y: 1.8, z: 0}
   gun: {fileID: 0}
   spawnPoint: {fileID: 0}
   rigid: {fileID: 1919054445}
@@ -19627,12 +19125,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.054092407, y: 0.2692864}
-      - {x: -0.6545582, y: -0.19355005}
-      - {x: -0.5877857, y: -0.66971385}
+    - - {x: 0.4593048, y: -0.014965296}
+      - {x: 0.06619835, y: 0.19665337}
+      - {x: -0.44482422, y: 0.008932114}
+      - {x: -0.6355114, y: -0.19643784}
+      - {x: -0.654644, y: -0.66971385}
       - {x: 0.06264305, y: -0.65762484}
       - {x: 0.6453457, y: -0.63440746}
-      - {x: 0.74692726, y: -0.23337787}
+      - {x: 0.6379776, y: -0.26969457}
 --- !u!50 &1919054445
 Rigidbody2D:
   serializedVersion: 4
@@ -19652,7 +19152,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1941018725
 GameObject:
   m_ObjectHideFlags: 0
