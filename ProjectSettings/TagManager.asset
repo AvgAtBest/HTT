@@ -10,6 +10,7 @@ TagManager:
   - Hazard
   - Coin
   - Heart
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Player
   - Sky
   - Platform
-  - 
+  - Ladder
   - 
   - 
   - 
