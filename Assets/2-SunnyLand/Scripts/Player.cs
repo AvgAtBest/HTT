@@ -49,11 +49,23 @@ namespace SunnyLand
             {
 
                 velocity.y = Mathf.Sqrt(2f * jumpHeight * -gravity);
+
                 Debug.Log("Jump Willy!");
             }
 
             //Apply Gravity
             velocity.y += gravity * Time.deltaTime;
+
+            if (controller.isGrounded && inputV < 0)
+            {
+                if (!Input.GetButtonDown("Jump"))
+                {
+                    velocity.y *= 3f;
+                }
+                Debug.Log("Swoosh");
+
+                controller.ignoreOneWayPlatformsThisFrame = true;
+            }
 
             //Apply Velocity to controller
             controller.Move(velocity * Time.deltaTime);//moves character controller
@@ -69,6 +81,16 @@ namespace SunnyLand
             anim.SetFloat("JumpY", controller.velocity.normalized.y);
 
             anim.SetBool("IsRunning", controller.velocity.x != 0);
+
+            if (controller.isGrounded && Input.GetKey(KeyCode.C))
+            {
+                anim.SetBool("IsCrouching", true);
+            }
+            if (controller.isGrounded && Input.GetKeyUp(KeyCode.C))
+            {
+                anim.SetBool("IsCrouching", false);
+            }
+
         }
     } 
 }
