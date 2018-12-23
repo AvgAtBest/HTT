@@ -121,9 +121,8 @@ namespace SunnyLand
             }
             else if (isClimbing)
             {
-                anim.SetBool("IsClimbing", isClimbing);
+                anim.SetBool("IsClimbing", true);
 
-                anim.SetBool("IsGrounded", false);
                 anim.SetBool("IsRunning", false);
 
             }
@@ -134,7 +133,8 @@ namespace SunnyLand
         {
             if (collision.gameObject.tag == "Ladder")
             {
-
+                anim.SetFloat("JumpY", 0);
+                anim.SetBool("IsGrounded", true);
                 isClimbing = true;
                 velocity.y = 0;
 
@@ -145,7 +145,7 @@ namespace SunnyLand
         {
             //anim.SetBool("IsClimbing", false);
             isClimbing = false;
-
+            anim.SetBool("IsClimbing", false);
             gravity = -25f;
         }
     }

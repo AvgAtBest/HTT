@@ -2011,7 +2011,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516068661}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.200001, y: 8.9, z: -11.03125}
+  m_LocalPosition: {x: 11.400002, y: 8.9, z: -11.03125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1979912581}
@@ -149294,7 +149294,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1195260835}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.200001, y: 8.9, z: -11.03125}
+  m_LocalPosition: {x: 11.400002, y: 8.9, z: -11.03125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 658271638}
@@ -149433,7 +149433,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1208863549}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.2, y: 8.9, z: -1.03125}
+  m_LocalPosition: {x: 11.4, y: 8.9, z: -1.03125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 176144460}
@@ -149476,7 +149476,7 @@ MonoBehaviour:
     m_Bits: 1
   triggerMask:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 4097
   oneWayPlatformMask:
     serializedVersion: 2
     m_Bits: 2048
